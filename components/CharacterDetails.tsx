@@ -9,7 +9,7 @@ const CharacterDetails: FunctionalComponent<Props> = ({ personaje }) => {
            <a href="/">Volver</a> 
            <div class="characterCardDetails">
             <img src={personaje.image}></img>
-            <div>
+            <div class = "characterDetailsDetail">
             <h1>{personaje.name}</h1>
             <p><strong>status: </strong>{personaje.status}</p>
             <p><strong>Species : </strong>{personaje.species}</p>
