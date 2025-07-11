@@ -26,14 +26,16 @@ const BuscadorCharacters: FunctionalComponent = () => {
         BuscarTodosCharacter();
     }, []);
     return (
-        <div>
-            <input
-                type="nombre"
-                name="nombre"
-                value={nombre}
-                onInput={(e) => setNombre(e.currentTarget.value)}
-            />
-            <button type="submit" onClick={BuscarCharacter}>Buscar</button>
+        <div class="buscadorContainer">
+            <div class="buscador">
+                <input
+                    type="nombre"
+                    name="nombre"
+                    value={nombre}
+                    onInput={(e) => setNombre(e.currentTarget.value)}
+                />
+                <button type="submit" onClick={BuscarCharacter}>Buscar</button>
+            </div>
             {personajes.length === 0
                 ? <CharacterContainer personajes={todospersonajes} />
                 : <CharacterContainer personajes={personajes} />}

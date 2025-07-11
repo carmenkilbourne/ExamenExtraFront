@@ -4,11 +4,15 @@ export type Character={
   status:string;
   species:string;
   gender:string;
-  origin:string[];
+  origin:Origin;
   location:string[];
   image:string;
 
 }
 export type CharacterAPI={
   results:Character[];
+}
+type Origin={
+  name:string;
+  url:string;
 }

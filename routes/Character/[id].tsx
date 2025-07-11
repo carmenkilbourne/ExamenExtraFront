@@ -17,7 +17,7 @@ export const handler: Handlers = {
 export default function AboutPage(props: PageProps<Props>) {
     const personaje =props.data.personaje;
   return (
-    <div>
+    <div class="characterDetConts">
         <CharacterDetails personaje={personaje}/>
 
     </div>

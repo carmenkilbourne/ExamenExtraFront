@@ -5,13 +5,18 @@ type Props = {
 };
 const CharacterDetails: FunctionalComponent<Props> = ({ personaje }) => {
     return (
-        <div>
+        <div class="characterDetCont">
            <a href="/">Volver</a> 
+           <div class="characterCardDetails">
             <img src={personaje.image}></img>
+            <div>
             <h1>{personaje.name}</h1>
-            <p>status:{personaje.status}</p>
-            <p>Species : {personaje.species}</p>
-            <p>Gender:{personaje.gender}</p>
+            <p><strong>status: </strong>{personaje.status}</p>
+            <p><strong>Species : </strong>{personaje.species}</p>
+            <p><strong>Gender: </strong>{personaje.gender}</p>
+            <p><strong>Origin: </strong>{personaje.origin.name}</p>
+            </div>
+            </div>
             
         </div>
     );
