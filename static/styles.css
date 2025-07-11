@@ -49,3 +49,15 @@ body{margin:0;}
     display: flex;
     flex-direction: column;
 }
+.characterdetails{
+    img{
+        height: 100px;
+        width:100px;
+
+    }
+
+}
+characterDetCont{
+    display: flex;
+    flex-direction: row;
+}

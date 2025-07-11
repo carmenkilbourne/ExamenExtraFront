@@ -16,7 +16,6 @@ export const handler: Handlers = {
 
 export default function AboutPage(props: PageProps<Props>) {
     const personaje =props.data.personaje;
-    console.log(props.data.personaje);
   return (
     <div>
         <CharacterDetails personaje={personaje}/>
